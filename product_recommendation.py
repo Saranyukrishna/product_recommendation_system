@@ -16,9 +16,9 @@ def find_similar_products(product_name, df, num_results=10):
 st.title("Product Recommendation System")
 
 try:
-    df = load_pickle_file()  # Default file path to 'product.pkl'
+    df = load_pickle_file() 
     st.success("Data loaded successfully!")
-    st.dataframe(df)  # Show first 5 rows of the data
+    st.dataframe(df)  
 
     product_name = st.text_input("Enter Product Name to Search:", "")
     if st.button("Find Similar Products"):
